@@ -1,0 +1,38 @@
+dev_mode: False #Use this to create data for dev purpouses, otherwise set to False for production mode, when this flag is False, labels wont' be used in any part of the pipeline
+save_dataset: True #Use this to save a dataset once is processed
+coordinates: True
+k_means_segmentation:
+  input:
+    image_difference: 'datasets/input/satellite_imagery/image_difference/'
+    post_event_image: 'datasets/input/satellite_imagery/post_event_image/'
+    training_labels: 'datasets/input/labels_shp/'
+  output:
+    tables: 'datasets/output/k_means_segmentation/tables/'
+    segments: 'datasets/output/k_means_segmentation/segments/'
+  temps:
+    folder: 'datasets/output/k_means_segmentation/temps/'
+    shapes: 'datasets/output/k_means_segmentation/temps/shapes/'
+    shepherd: 'datasets/output/k_means_segmentation/temps/shepherd'
+  params:
+    numClusters: 19 # is an int which specifies the number of clusters within the KMeans clustering (default = 60).
+    minPxls: 80  # is an int which specifies tDhe minimum number pixels within a segments (default = 100)
+    distThres: 50  # specifies the distance threshold  for joining the segments (default = 100, set to large number to turn off this option)
+    sampling: 100  # sampling specify the subsampling of the image for the data used within the KMeans (default = 100; 1 == no subsampling)
+    kmMaxIter: 200  # maximum iterations for KMeans.
+mergin_algorithm:
+  input:
+    tables: 'datasets/output/k_means_segmentation/tables/'
+  output:
+    wrong:  'datasets/output/merging_algorithm/wrong/'
+    merged: 'datasets/output/merging_algorithm/merged/'
+    regions: 'datasets/output/merging_algorithm/regions/'
+  params:
+    n_std_ndvi_change: 2.0
+    n_std_rgd: 2.0
+    thr_coarse: 0.2
+    thr_fine: 0.05
+model:
+  path: 'model/model_validation_2019'
+  segments: 'datasets/output/merging_algorithm/merged/'
+  predictions: 'datasets/output/predictions/'
+  regions: 'datasets/output/merging_algorithm/regions/'
