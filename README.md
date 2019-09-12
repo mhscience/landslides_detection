@@ -81,3 +81,8 @@ To install this package with conda run:
 ```
 conda install scikit-learn
 ```
+To install pyyaml
+
+```
+conda install -c anaconda pyyaml
+```
