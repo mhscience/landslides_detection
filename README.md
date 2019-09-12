@@ -6,7 +6,8 @@ Landslide detection using GEE and Python
 -Run the Requirements file to create a env for this project
 
 
-If it does not work, then follows the steps to install GEOBIA:
+If it does not work, then follows the steps to install GEOBIA and Scikit learn: 
+
 
 ## GEOBIA: 
 
@@ -64,4 +65,19 @@ conda install -c conda-forge rios
 
 (https://anaconda.org/conda-forge/rios)
 
+
+## Scikit Learn
+A free software Machine Learning library for Python 
  
+###Requirements 
+Python (>= 3.5)
+NumPy (>= 1.11.0)
+SciPy (>= 0.17.0)
+joblib (>= 0.11)
+
+(https://scikit-learn.org/stable/install.html)
+
+To install this package with conda run:
+```
+conda install scikit-learn
+```
