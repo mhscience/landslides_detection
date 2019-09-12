@@ -26,7 +26,7 @@ Within the conda terminal, install the package running:
 ```
    conda install -c conda-forge gdal 
 ```
-(https://anaconda.org/conda-forge/gdal)
+https://anaconda.org/conda-forge/gdal
 
 2. The Remote Sensing and GIS Library (RSGISLib): for segmentation and attribution of objects
 
@@ -49,7 +49,7 @@ conda create -n myenv tuiview
 
 conda activate myenv
 ```
-(http://tuiview.org/)
+http://tuiview.org/
 
 
 - To open the raster and/or segmented images files:
@@ -63,7 +63,7 @@ To install this package with conda run:
 conda install -c conda-forge rios 
 ```
 
-(https://anaconda.org/conda-forge/rios)
+https://anaconda.org/conda-forge/rios
 
 
 ## Scikit Learn
@@ -75,7 +75,7 @@ NumPy (>= 1.11.0)\
 SciPy (>= 0.17.0)\
 joblib (>= 0.11)
 
-(https://scikit-learn.org/stable/install.html)
+https://scikit-learn.org/stable/install.html
 
 To install this package with conda run:
 ```
