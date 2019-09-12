@@ -70,10 +70,10 @@ conda install -c conda-forge rios
 A free software Machine Learning library for Python 
  
 ### Requirements 
-Python (>= 3.5)
-NumPy (>= 1.11.0)
-SciPy (>= 0.17.0)
-joblib (>= 0.11)
+Python (>= 3.5)\
+NumPy (>= 1.11.0)\
+SciPy (>= 0.17.0)\
+joblib (>= 0.11)\
 
 (https://scikit-learn.org/stable/install.html)
 
