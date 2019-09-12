@@ -6,7 +6,7 @@ Landslide detection using GEE and Python
 -Run the Requirements file to create a env for this project
 
 
-If it does not work, then following steps to install GEOBIA:
+If it does not work, then follows the steps to install GEOBIA:
 
 ## GEOBIA: 
 
