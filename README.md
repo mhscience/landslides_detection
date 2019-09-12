@@ -1,5 +1,5 @@
 # landslide_detector
-Landslide detection using GEE and ML
+Landslide detection using GEE and Python
 
 #Minium Requirements:
 -Windows OS x64
