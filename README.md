@@ -14,7 +14,7 @@ A modular system for performing Geographic Object-Based Image Analysis using ope
 
 The system uses the following libraries: GDAL,RSGISLib,TuiView,RIOS
 
-## Installation:
+### Installation:
 
 If using Conda
 
