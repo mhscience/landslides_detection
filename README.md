@@ -6,11 +6,10 @@ Landslide detection using GEE and Python
 -Run the Requirements file to create a env for this project
 
 
-If it does not work, then follow the steps:
+If it does not work, then following steps to install GEOBIA:
 
+## GEOBIA: 
 
-
-# GEOBIA: 
 A modular system for performing Geographic Object-Based Image Analysis using open source software (Clewley et al., 2014)
 
 The system uses the following libraries: GDAL,RSGISLib,TuiView,RIOS
