@@ -130,8 +130,8 @@ def merge_segments_no_class(regions,key,config):
         region_id = df_region['segment_id'].values[0][:3] + '_' + 'R' + str(i)
         for segment in region:
             segments_region.setdefault(region_id, []).append(segment['segment_id'])
-            data = merge_region(df_region, region_id, 0)
-            list_of_series.append(data)
+        data = merge_region(df_region, region_id, 0)
+        list_of_series.append(data)
         i = i + 1
     save_segments_in_regions(key, segments_region, config)
     return pd.DataFrame(list_of_series, columns=['segment_id', 'area_m2', 'ratio_rg_change', 'ndvi', 'ndvi_change', 'brightness', 'brightness_change','gndvi',  'nd_std', 'slope_mean', 'slope_max', 'b3', 'b4', 'b2', 'b8', 'height_min', 'height_max'])

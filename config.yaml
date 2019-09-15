@@ -32,7 +32,7 @@ mergin_algorithm:
     thr_coarse: 0.2
     thr_fine: 0.05
 model:
-  path: 'model/model_validation_2019'
+  path: 'model/model_validation_2019_14_9'
   segments: 'datasets/output/merging_algorithm/merged/'
   predictions: 'datasets/output/predictions/'
   regions: 'datasets/output/merging_algorithm/regions/'
