@@ -5,11 +5,10 @@ This tool was created as part of my MSc Thesis In Geomatics made in join collabo
 
 
 #### Minium Requirements:
--Windows OS x64
+-Windows OS x64 \\
 -Run the Requirements file to create a env for this project
 
-
-If it does not work, then follows the steps to install GEOBIA and Scikit learn: 
+Remarks: if it does not work, then follows the steps to install GEOBIA and Scikit learn: 
 
 
 ## GEOBIA: 
