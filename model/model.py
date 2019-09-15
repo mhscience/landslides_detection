@@ -80,7 +80,7 @@ def run(config):
          if filename.endswith('.csv'):
             frame= pd.read_csv(path+filename,index_col=False)
             frame.rename( columns={'Unnamed: 0':'segment'}, inplace=True)  #rename columns
-            df_val_data[filename[0:12]] = frame
+            df_val_data[filename] = frame
 
     # for key in df_val_data:
     #     change_dataTypes('class',df_val_data[key])
