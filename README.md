@@ -4,7 +4,7 @@ Landslide detection from optical satellite imagery using Object-Based Image Anal
 Author: Meylin Herrera Herrera \
 This tool was created as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares Research Institute (https://www.deltares.nl/en/).
 
-Software Specifications: Google Earth Engine (GEE) and Python
+Tool built with Google Earth Engine (GEE) and Python
 #### Minium Requirements:
 -Windows OS x64 \
 -Run the Requirements file to create a environment for this project
