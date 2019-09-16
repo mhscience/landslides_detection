@@ -1,6 +1,6 @@
 # landslide_detector
 Landslide detection using GEE and Python\
-Author: Ir. Meylin Herrera Herrera \
+Author: Meylin Herrera Herrera \
 This tool was created as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares Research Institute (https://www.deltares.nl/en/).
 
 
