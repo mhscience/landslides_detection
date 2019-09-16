@@ -9,7 +9,7 @@ I created this tool part of my master thesis in Geomatics made in join collabora
 -Run the Requirements file to create a env for this project
 If it does not work, then follows the steps to install GEOBIA and Scikit learn: 
 
-The toll was created using open-source technologies: Google Earth engine and Python
+The toll was created using open-source technologies: Google Earth Engine (GEE) and Python
 
 ## GEOBIA: 
 
