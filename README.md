@@ -1,5 +1,6 @@
 # landslide_detector
 Landslide detection from optical satellite imagery using Object-Based Image Analysis (OBIA) and Machine Learning (Random Forest)\
+\
 Author: Meylin Herrera Herrera \
 This tool was created as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares Research Institute (https://www.deltares.nl/en/).
 
