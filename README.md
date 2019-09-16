@@ -4,11 +4,12 @@ Author: Meylin Herrera Herrera
 
 I created this tool part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares research institute (https://www.deltares.nl/en/).
 
-#Minium Requirements:
+#### Minium Requirements:
 -Windows OS x64
 -Run the Requirements file to create a env for this project
 If it does not work, then follows the steps to install GEOBIA and Scikit learn: 
 
+The toll was created using open-source technologies (Google Earth engine and Python)
 
 ## GEOBIA: 
 
