@@ -13,9 +13,9 @@ The tool uses open-source technologies: Google Earth Engine (GEE) and Python
 
 ## GEOBIA: 
 
-A modular system for performing Geographic Object-Based Image Analysis using open source software (Clewley et al., 2014)
+A modular system for performing Geographic Object-Based Image Analysis using open source software (https://www.sciencedirect.com/science/article/pii/S0098300413002288)
 
-The system uses the following libraries: GDAL,RSGISLib,TuiView,RIOS
+The system uses the following libraries: GDAL, RSGISLib, TuiView, RIOS
 
 ### Installation:
 
