@@ -3,7 +3,7 @@ Landslide detection from optical remotely sensed images using Object-Based image
 \
 Author: Meylin Herrera Herrera 
 
-I created this tool part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares research institute (https://www.deltares.nl/en/).
+I created this tool as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares research institute (https://www.deltares.nl/en/).
 
 #### Minium Requirements:
 -Windows OS x64
