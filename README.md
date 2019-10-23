@@ -1,19 +1,22 @@
 # landslide_detector
-Landslide detection using GEE and Python
+Landslide detection from optical remotely sensed images using Object-Based image analysis (OBIA) and Machine Learning (Random Forest)\
+\
+Author: Meylin Herrera Herrera 
 
-#Minium Requirements:
+I created this tool as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares research institute (https://www.deltares.nl/en/).
+
+#### Minium Requirements:
 -Windows OS x64
 -Run the Requirements file to create a env for this project
-
-
 If it does not work, then follows the steps to install GEOBIA and Scikit learn: 
 
+The tool uses open-source technologies: Google Earth Engine (GEE) and Python
 
 ## GEOBIA: 
 
-A modular system for performing Geographic Object-Based Image Analysis using open source software (Clewley et al., 2014)
+A modular system for performing Geographic Object-Based Image Analysis using open source software (https://www.sciencedirect.com/science/article/pii/S0098300413002288)
 
-The system uses the following libraries: GDAL,RSGISLib,TuiView,RIOS
+The system uses the following libraries: GDAL, RSGISLib, TuiView, RIOS
 
 ### Installation:
 
