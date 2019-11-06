@@ -1,5 +1,5 @@
 # landslide_detector
-Landslide detection from optical remotely sensed images using Object-Based image analysis (OBIA) and Machine Learning (Random Forest)\
+Landslide detection from optical remotely sensed images using Object-Based Image Analysis (OBIA) and Machine Learning (Random Forest classifier)\
 \
 Author: Meylin Herrera Herrera 
 
