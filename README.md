@@ -5,20 +5,22 @@ Author: Meylin Herrera Herrera
 
 I created this tool as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares research institute (https://www.deltares.nl/en/).
 
-#### Minium Requirements:
--Windows OS x64
--Run the Requirements file to create a env for this project
-If it does not work, then follows the steps to install GEOBIA and Scikit learn: 
+#### Minium Requirements (Win)
+- Windows OS x64. Run the Requirements file to create a python environment for this project. This can be done with conda on a new environment, with: 
 
-The tool uses open-source technologies: Google Earth Engine (GEE) and Python
+```
+    conda create --name ld --file Requirements.txt
+``` 
 
-## GEOBIA: 
+If it does not work, then follow the steps to install GEOBIA and Scikit learn. The tool uses open-source technologies: Google Earth Engine (GEE) and Python
+
+## GEOBIA 
 
 A modular system for performing Geographic Object-Based Image Analysis using open source software (https://www.sciencedirect.com/science/article/pii/S0098300413002288)
 
 The system uses the following libraries: GDAL, RSGISLib, TuiView, RIOS
 
-### Installation:
+### Installation
 
 If using Conda
 
@@ -70,13 +72,16 @@ https://anaconda.org/conda-forge/rios
 
 
 ## Scikit Learn
-A free software Machine Learning library for Python 
+A free software Machine Learning library for Python. 
  
-### Requirements 
+### Installation
+These are the requirements needed:
+```
 Python (>= 3.5)\
 NumPy (>= 1.11.0)\
 SciPy (>= 0.17.0)\
 joblib (>= 0.11)
+```
 
 https://scikit-learn.org/stable/install.html
 
@@ -84,7 +89,7 @@ To install this package with conda run:
 ```
 conda install scikit-learn
 ```
-To install pyyaml
+To install pyyaml:
 
 ```
 conda install -c anaconda pyyaml
