@@ -1,96 +1,35 @@
 # landslide_detector
-Landslide detection from optical remotely sensed images using Object-Based Image Analysis (OBIA) and Machine Learning (Random Forest classifier)\
-\
-Author: Meylin Herrera Herrera 
+
+
+The landslide_detector is a tool developed to detect landslides from optical remotely sensed images using Object-Based Image Analysis (OBIA) and Machine Learning (Random Forest classifier)
+
+I  developed this tool to test the methodology proposed in [my master thesis](https://repository.tudelft.nl/islandora/object/uuid%3A52fe6b3b-ec0b-4cad-b51d-7798830688a4?collection=education) in Geomatics at Delft University of Technology . This implementation can be used to assist landslides experts/non-experts in detecting new landslides events and improve existing inventories.
 
 I created this tool as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares research institute (https://www.deltares.nl/en/).
 
-#### Minium Requirements (Win)
-- Windows OS x64. Run the Requirements file to create a python environment for this project. This can be done with conda on a new environment, with: 
+This project was made in join collaboration [Delft University of Technology](https://www.tudelft.nl/en/) and [Deltares Research Institute](https://www.deltares.nl/en/).
 
-```
-    conda create --name ld --file Requirements.txt
-``` 
+The tool is built using open source software: [Google Earth Engine(GEE)](https://earthengine.google.com/) and Python with their libraries [Remote Sensing and GIS software library (RSGISLib)](https://www.rsgislib.org/) and [Scikit-Learn](https://scikit-learn.org/stable/). It includes three main components:
 
-If it does not work, then follow the steps to install GEOBIA and Scikit learn. The tool uses open-source technologies: Google Earth Engine (GEE) and Python
+![name me](/doc/img/segmentation.png)
+*Image pre-processing and segmentation; sample in a remote area in Italy (L17).(a) Cloud-free pre-landslide image. (b) Cloud-free post-landslide image. (c) Image difference using band ratioing red/green (RGD). (d) Image segmentation.*
 
-## GEOBIA 
+- [Pre-processing script](https://github.com/mhscience/landslides_detection/blob/master/pre_processingGEE/pre_processing_thesis_mh.js) developed for Google Earth Engine platform. The script obtains cloud-free images from optical satellite imagery (Sentinel-20, extract spectral and topographic features from Sentinel-2 and global Digital Elevation Model (DEM) and compute new landslides diagnostic features at pixel level. 
 
-A modular system for performing Geographic Object-Based Image Analysis using open source software (https://www.sciencedirect.com/science/article/pii/S0098300413002288)
+- [Image Segmentation program](https://github.com/mhscience/landslides_detection/tree/master/segmentation) developed in Python.  Image segmentation is the first step towards the application of OBIA. It consists on the subdivision of an image into spatially continuous, disjoint, and relative homogeneous regions that refer to segments. This stage is implemented as a two-step approach: (a) an initial segmentation using a [k-means script](https://github.com/mhscience/landslides_detection/tree/master/segmentation/k_means_segmentation)   (developed using [RSGISLib](https://www.rsgislib.org/)); (b) [merging algorithm script](https://github.com/mhscience/landslides_detection/tree/master/segmentation/merging_algorithm) using a region-growing implementation.
 
-The system uses the following libraries: GDAL, RSGISLib, TuiView, RIOS
+- [Image classification script](https://github.com/mhscience/landslides_detection/tree/master/model) to detect the landslide segments. Once segments with features statistics are obtained from the Image segmentation step, the image is classified by assigning each segment to a class. The classification is conducted using supervised Machine Learning, specifically the Random Forest algorithm. 
 
-### Installation
-
-If using Conda
-
-1. GDAL: for geospatial data manipulation and raster data model
-   
-Within the conda terminal, install the package running:
-
-```
-   conda install -c conda-forge gdal 
-```
-https://anaconda.org/conda-forge/gdal
-
-2. The Remote Sensing and GIS Library (RSGISLib): for segmentation and attribution of objects
-
-Within the conda terminal, install RSGISLib to a new environment using:
-
-```
-  conda create -n rsgislib -c conda-forge rsgislib   
-
-  activate rsgislib
-```
-
-3. TuiView: for viewing and manipulating RATs (Raster Attribute Tables)
-
-- To install this package with conda run:  
-
-```
-conda config --add channels conda-forge
-
-conda create -n myenv tuiview
-
-conda activate myenv
-```
-http://tuiview.org/
+We provide a [script](https://github.com/mhscience/landslides_detection/tree/master/training_script)for model the training and testing.
 
 
-- To open the raster and/or segmented images files:
+#### Author: 
+MSc.ir. Meylin Herrera Herrera  
+Master in Geomatics @ Delft University of Technology   
+Contact: mhscience@gmail.com  
 
-Within the conda terminal (in myenv) run: tuiview
-
-4. Raster I/O Simplification (RIOS): for reading, writing and classifying attributed objects
-
-To install this package with conda run:
-```
-conda install -c conda-forge rios 
-```
-
-https://anaconda.org/conda-forge/rios
-
-
-## Scikit Learn
-A free software Machine Learning library for Python. 
- 
-### Installation
-These are the requirements needed:
-```
-Python (>= 3.5)\
-NumPy (>= 1.11.0)\
-SciPy (>= 0.17.0)\
-joblib (>= 0.11)
-```
-
-https://scikit-learn.org/stable/install.html
-
-To install this package with conda run:
-```
-conda install scikit-learn
-```
-To install pyyaml:
-
-```
-conda install -c anaconda pyyaml
-```
+#### Contributors
+Dr.ir. Mathias Lemmens @ Delft University of Technology  
+Dr.ir. Amin Askarinejad @ Delft University of Technology  
+Dr.ir. Faraz Tehrani @ Deltares Research Institute  
+Ir. Giorgio Santinelli @ Deltares Research Institute
