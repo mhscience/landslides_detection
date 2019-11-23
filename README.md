@@ -12,7 +12,7 @@ This project was made in join collaboration [Delft University of Technology](htt
 The tool is built using open source software: [Google Earth Engine(GEE)](https://earthengine.google.com/) and Python with their libraries [Remote Sensing and GIS software library (RSGISLib)](https://www.rsgislib.org/) and [Scikit-Learn](https://scikit-learn.org/stable/). It includes three main components:
 
 ![name me](/doc/img/segmentation.png)
-*Image pre-processing and segmentation; sample in a remote area in Italy (L17).(a) Cloud-free pre-landslide image. (b) Cloud-free post-landslide image. (c) Image difference using band ratioing red/green (RGD). (d) Image segmentation.*
+*Image pre-processing and segmentation; sample in a remote area in Italy.(a) Cloud-free pre-landslide image. (b) Cloud-free post-landslide image. (c) Image difference using band ratioing red/green (RGD). (d) Image segmentation.*
 
 - [Pre-processing script](https://github.com/mhscience/landslides_detection/blob/master/pre_processingGEE/pre_processing_thesis_mh.js) developed for Google Earth Engine platform. The script obtains cloud-free images from optical satellite imagery (Sentinel-20, extract spectral and topographic features from Sentinel-2 and global Digital Elevation Model (DEM) and compute new landslides diagnostic features at pixel level. 
 
@@ -20,7 +20,7 @@ The tool is built using open source software: [Google Earth Engine(GEE)](https:/
 
 - [Image classification script](https://github.com/mhscience/landslides_detection/tree/master/model) to detect the landslide segments. Once segments with features statistics are obtained from the Image segmentation step, the image is classified by assigning each segment to a class. The classification is conducted using supervised Machine Learning, specifically the Random Forest algorithm. 
 
-We provide a [script](https://github.com/mhscience/landslides_detection/tree/master/training_script)for model the training and testing.
+We provide a [script](https://github.com/mhscience/landslides_detection/tree/master/training_script) for model the training and testing.
 
 
 #### Author: 
