@@ -1,11 +1,9 @@
 # landslide_detector
 
 
-The landslide_detector is a tool developed to detect landslides from optical remotely sensed images using Object-Based Image Analysis (OBIA) and Machine Learning (Random Forest classifier)
+The landslide_detector is a tool developed to detect landslides from optical remotely sensed images using Object-Based Image Analysis (OBIA) and Machine Learning (Random Forest classifier).
 
-I  developed this tool to test the methodology proposed in [my master thesis](https://repository.tudelft.nl/islandora/object/uuid%3A52fe6b3b-ec0b-4cad-b51d-7798830688a4?collection=education) in Geomatics at Delft University of Technology . This implementation can be used to assist landslides experts/non-experts in detecting new landslides events and improve existing inventories.
-
-I created this tool as part of my master thesis in Geomatics made in join collaboration Delft University of Technology (https://www.tudelft.nl/en/) and Deltares research institute (https://www.deltares.nl/en/).
+I  developed this tool to test the methodology proposed in [my master thesis](https://repository.tudelft.nl/islandora/object/uuid%3A52fe6b3b-ec0b-4cad-b51d-7798830688a4?collection=education) in Geomatics at Delft University of Technology. This implementation can be used to assist landslides experts/non-experts in detecting new landslides events and improve existing inventories.
 
 This project was made in join collaboration [Delft University of Technology](https://www.tudelft.nl/en/) and [Deltares Research Institute](https://www.deltares.nl/en/).
 
@@ -14,13 +12,13 @@ The tool is built using open source software: [Google Earth Engine(GEE)](https:/
 ![name me](/doc/img/segmentation.png)
 *Image pre-processing and segmentation; sample in a remote area in Italy.(a) Cloud-free pre-landslide image. (b) Cloud-free post-landslide image. (c) Image difference using band ratioing red/green (RGD). (d) Image segmentation.*
 
-- [Pre-processing script](https://github.com/mhscience/landslides_detection/blob/master/pre_processingGEE/pre_processing_thesis_mh.js) developed for Google Earth Engine platform. The script obtains cloud-free images from optical satellite imagery (Sentinel-20, extract spectral and topographic features from Sentinel-2 and global Digital Elevation Model (DEM) and compute new landslides diagnostic features at pixel level. 
+- [Pre-processing script](https://github.com/mhscience/landslides_detection/blob/master/pre_processingGEE/pre_processing_thesis_mh.js) developed for Google Earth Engine. The script obtains cloud-free images from optical satellite imagery (Sentinel-2), extract spectral and topographic features from Sentinel-2 and global Digital Elevation Model (DEM), and compute new landslides diagnostic features at pixel level. 
 
 - [Image Segmentation program](https://github.com/mhscience/landslides_detection/tree/master/segmentation) developed in Python.  Image segmentation is the first step towards the application of OBIA. It consists on the subdivision of an image into spatially continuous, disjoint, and relative homogeneous regions that refer to segments. This stage is implemented as a two-step approach: (a) an initial segmentation using a [k-means script](https://github.com/mhscience/landslides_detection/tree/master/segmentation/k_means_segmentation)   (developed using [RSGISLib](https://www.rsgislib.org/)); (b) [merging algorithm script](https://github.com/mhscience/landslides_detection/tree/master/segmentation/merging_algorithm) using a region-growing implementation.
 
 - [Image classification script](https://github.com/mhscience/landslides_detection/tree/master/model) to detect the landslide segments. Once segments with features statistics are obtained from the Image segmentation step, the image is classified by assigning each segment to a class. The classification is conducted using supervised Machine Learning, specifically the Random Forest algorithm. 
 
-We provide a [script](https://github.com/mhscience/landslides_detection/tree/master/training_script) for model the training and testing.
+We provide a [script](https://github.com/mhscience/landslides_detection/tree/master/training_script) for model training and testing.
 
 
 #### Author: 
