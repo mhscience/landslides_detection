@@ -12,13 +12,13 @@ The tool is built using open source software: [Google Earth Engine(GEE)](https:/
 ![name me](/doc/img/segmentation.png)
 *Image pre-processing and segmentation; sample in a remote area in Italy. (a) Cloud-free pre-landslide image. (b) Cloud-free post-landslide image. (c) Image difference using band ratioing red/green (RGD). (d) Image segmentation.*
 
-- [Pre-processing script](https://github.com/mhscience/landslides_detection/blob/master/pre_processingGEE/pre_processing_thesis_mh.js) developed for Google Earth Engine. The script obtains cloud-free images from optical satellite imagery (Sentinel-2), extracts spectral and topographic features from Sentinel-2 and global Digital Elevation Model (DEM), and computes new landslides diagnostic features at pixel level. 
+- [Pre-processing script](https://github.com/mhscience/landslides_detection/blob/master/pre_processingGEE/pre_processing_thesis_mh.js) developed for Google Earth Engine. The script obtains cloud-free images from optical satellite imagery (Sentinel-2), extracts spectral and topographic features from Sentinel-2 and global Digital Elevation Model (DEM), and computes new landslides diagnostic features at pixel level
 
 - [Image segmentation program](https://github.com/mhscience/landslides_detection/tree/master/segmentation) developed in Python.  Image segmentation is the first step towards the application of OBIA. It consists on the subdivision of an image into spatially continuous, disjoint, and relative homogeneous regions that refer to segments. This stage is implemented as a two-step approach: (a) an initial segmentation using a [k-means script](https://github.com/mhscience/landslides_detection/tree/master/segmentation/k_means_segmentation)   (developed using [RSGISLib](https://www.rsgislib.org/)); (b) [merging algorithm script](https://github.com/mhscience/landslides_detection/tree/master/segmentation/merging_algorithm) using a region-growing implementation
 
 - [Image classification script](https://github.com/mhscience/landslides_detection/tree/master/model) to detect the landslide segments. Once segments with features statistics are obtained from the Image segmentation step, the image is classified by assigning each segment to a class. The classification is conducted using supervised Machine Learning, specifically the Random Forest algorithm
 
-We provide a [script](https://github.com/mhscience/landslides_detection/tree/master/training_script) for model training and testing
+We provide a [script](https://github.com/mhscience/landslides_detection/tree/master/training_script) for model training and testing.
 
 #### Quickstart
 [See our tutorial](https://github.com/mhscience/landslides_detection/wiki)
