@@ -33,3 +33,8 @@ Dr.ir. Mathias Lemmens @ Delft University of Technology
 Dr.ir. Amin Askarinejad @ Delft University of Technology  
 Dr.ir. Faraz Tehrani @ Deltares Research Institute  
 Ir. Giorgio Santinelli @ Deltares Research Institute
+
+#### Contributing
+
+We encourage you to contribute. Please check our [contributing guidelines](https://github.com/mhscience/landslides_detection/blob/master/contributing.md)
+
