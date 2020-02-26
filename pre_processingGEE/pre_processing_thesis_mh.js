@@ -4,7 +4,7 @@ Imports: Sentinel-2 MSI: MultiSpectral Instrument, Level-1C
 
 
 // Author:
-//  Meylin Herrera  // Meylin.Herrera@deltares.nl
+//  Meylin Herrera  // mhscience525@gmail.com
 //
 // Date: 
 //  29/08/2019
