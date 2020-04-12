@@ -4,7 +4,7 @@ import yaml
 import time
 from distutils.dir_util import copy_tree
 
-from utils.file_io import remove_files
+from utils.file_io import remove_files, recreate_folder
 from utils.find_coordinates import findCoordinates
 import segmentation.k_means_segmentation.initial_segmentation_thesis_mh as k_means
 import segmentation.merging_algorithm.merger as merging_algorithm
@@ -21,11 +21,19 @@ print("cleaning output folders")
 print("cleaning k_means_segmentation output files")
 remove_files(glob.glob(config['k_means_segmentation']['output']['tables']+"*"))
 remove_files(glob.glob(config['k_means_segmentation']['output']['segments']+"*"))
+recreate_folder(config['k_means_segmentation']['output']['tables'])
+recreate_folder(config['k_means_segmentation']['output']['segments'])
+
 print("cleaning merging algorithm output files")
 remove_files(glob.glob(config['mergin_algorithm']['output']['wrong']+"*"))
 remove_files(glob.glob(config['mergin_algorithm']['output']['merged']+"*"))
 remove_files(glob.glob(config['mergin_algorithm']['output']['regions']+"*"))
+recreate_folder(config['mergin_algorithm']['output']['wrong'])
+recreate_folder(config['mergin_algorithm']['output']['merged'])
+recreate_folder(config['mergin_algorithm']['output']['regions'])
+
 remove_files(glob.glob(config['model']['predictions']+"*"))
+recreate_folder(config['model']['predictions'])
 print("cleaning output folders success")
 
 # Run k-means
