@@ -1,5 +1,6 @@
 dev_mode: False #Use this to create data for dev purpouses, otherwise set to False for production mode, when this flag is False, labels wont' be used in any part of the pipeline
 save_dataset: True #Use this to save a dataset once is processed
+plot_kea: False #Plot Kea images and create shapes from those.
 coordinates: True
 k_means_segmentation:
   input:
