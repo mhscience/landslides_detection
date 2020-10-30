@@ -101,13 +101,13 @@ def reading_tables(clumps, element,nameFile,path_tables,config):
         if dev_mode:
             input_features[i] = segment_id, area, data_east[i], data_north[i], data_class[i], data_class_name[i], data_b4[i], data_b3[i], data_b2[i], data_b8[i], \
                           data_ndvi[i], data_ndvi_change[i],data_ratio[i], data_brightness[i],data_brightness_change[i],data_gndvi[i],data_slope_max[i], data_slope_mean[i], \
-                          data_ndstdDev[i],data_mean_height,data_min_height[i],data_max_height[i]
+                          data_ndstdDev[i],data_mean_height[i],data_min_height[i],data_max_height[i]
         else:
             input_features[i] = segment_id, area, data_east[i], data_north[i], \
                                 data_b4[i], data_b3[i], data_b2[i], data_b8[i], \
                                 data_ndvi[i], data_ndvi_change[i], data_ratio[i], data_brightness[i], \
                                 data_brightness_change[i], data_gndvi[i], data_slope_max[i], data_slope_mean[i], \
-                                data_ndstdDev[i], data_mean_height, data_min_height[i], data_max_height[i]
+                                data_ndstdDev[i], data_mean_height[i], data_min_height[i], data_max_height[i]
 
     training_frame = pd.DataFrame(input_features).T
 
