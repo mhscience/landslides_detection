@@ -1,6 +1,7 @@
 # landslide_detector
 
 
+
 The landslide_detector is a tool developed to detect landslides from optical remotely sensed images using Object-Based Image Analysis (OBIA) and Machine Learning (Random Forest classifier).
 
 This tool was developed to test the methodology proposed in [my master thesis](https://repository.tudelft.nl/islandora/object/uuid%3A52fe6b3b-ec0b-4cad-b51d-7798830688a4?collection=education) in Geomatics at Delft University of Technology. This implementation can be used to assist landslides experts/non-experts in detecting new landslides events and improve existing inventories.
