@@ -41,7 +41,7 @@ ipython @ file:///D:/bld/ipython_1598750147809/work
 ipython-genutils==0.2.0
 isort @ file:///D:/bld/isort_1601445857170/work
 jedi @ file:///D:/bld/jedi_1592619572293/work
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1601671685479/work
 json5 @ file:///home/conda/feedstock_root/build_artifacts/json5_1600692310011/work
 jsonschema==3.2.0
