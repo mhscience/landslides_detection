@@ -99,7 +99,7 @@ pytz==2020.1
 pywin32==227
 pywin32-ctypes==0.2.0
 pywinpty==0.5.7
-PyYAML==5.3.1
+PyYAML==5.4
 pyzmq==19.0.2
 QDarkStyle @ file:///home/conda/feedstock_root/build_artifacts/qdarkstyle_1597162770358/work
 QtAwesome @ file:///home/conda/feedstock_root/build_artifacts/qtawesome_1601436771964/work
