@@ -96,7 +96,7 @@ python-dateutil==2.8.1
 python-jsonrpc-server @ file:///home/conda/feedstock_root/build_artifacts/python-jsonrpc-server_1599827444631/work
 python-language-server @ file:///home/conda/feedstock_root/build_artifacts/python-language-server_1600306384607/work
 pytz==2020.1
-pywin32==227
+pywin32==301
 pywin32-ctypes==0.2.0
 pywinpty==0.5.7
 PyYAML==5.3.1
