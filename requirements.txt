@@ -47,7 +47,7 @@ json5 @ file:///home/conda/feedstock_root/build_artifacts/json5_1600692310011/wo
 jsonschema==3.2.0
 jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1598486169312/work
 jupyter-core==4.6.3
-jupyterlab==2.2.8
+jupyterlab==2.2.10
 jupyterlab-pygments @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_pygments_1601375948261/work
 jupyterlab-server @ file:///home/conda/feedstock_root/build_artifacts/jupyterlab_server_1593951277307/work
 keyring @ file:///D:/bld/keyring_1600439640080/work
