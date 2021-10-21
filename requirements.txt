@@ -6,7 +6,7 @@ async-generator==1.10
 atomicwrites @ file:///home/conda/feedstock_root/build_artifacts/atomicwrites_1588182545583/work
 attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1599308529326/work
 autopep8 @ file:///home/conda/feedstock_root/build_artifacts/autopep8_1596345643597/work
-Babel==2.8.0
+Babel==2.9.1
 backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393461/work
 backports.functools-lru-cache==1.6.1
 bcrypt @ file:///D:/bld/bcrypt_1597603720555/work
