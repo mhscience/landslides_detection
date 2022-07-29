@@ -54,7 +54,7 @@ keyring @ file:///D:/bld/keyring_1600439640080/work
 lazy-object-proxy==1.4.3
 MarkupSafe @ file:///D:/bld/markupsafe_1600368513338/work
 mccabe==0.6.1
-mistune==0.8.4
+mistune==2.0.3
 mkl-service==2.3.0
 munch==2.5.0
 nbclient @ file:///home/conda/feedstock_root/build_artifacts/nbclient_1598558657104/work
